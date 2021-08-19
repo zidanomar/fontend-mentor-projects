@@ -1,0 +1,46 @@
+.overlay {
+  opacity: 0;
+  position: fixed;
+  top: 3.75rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(var(--dark-blue), transparent);
+  overflow: hidden;
+}
+.overlay.fade-in {
+  animation: fade-in 0.3s ease-in-out forwards;
+}
+
+.overlay.fade-out {
+  animation: fade-out 0.3s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}

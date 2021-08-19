@@ -1,0 +1,17 @@
+.icon {
+  display: inline-block;
+  height: 1.25rem;
+  cursor: pointer;
+}
+
+.icon:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.icon svg path {
+  transition: fill 0.2s ease-in-out;
+}
+
+.icon:hover svg path {
+  fill: var(--lime-green);
+}

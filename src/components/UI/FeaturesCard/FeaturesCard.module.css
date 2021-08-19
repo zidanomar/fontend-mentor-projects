@@ -1,0 +1,44 @@
+.feature__item {
+  padding: 0.9375rem;
+  text-align: center;
+}
+
+.feature__icon {
+  margin-bottom: 1.875rem;
+}
+
+.featrue__title {
+  font-size: 1.26rem;
+  font-weight: 300;
+  line-height: 1.15;
+  color: var(--dark-blue);
+  margin-bottom: 1rem;
+}
+
+.feature__description {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@media (min-width: 39.9375em) {
+  .feature__item {
+    flex: 0 0 50%;
+    text-align: left;
+  }
+
+  .feature__icon {
+    margin-bottom: 2.75rem;
+  }
+
+  .feature__title {
+    font-size: 1.5rem;
+
+    margin-bottom: 2.125rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .feature__item {
+    flex: 1;
+  }
+}

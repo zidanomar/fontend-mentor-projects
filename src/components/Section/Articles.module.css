@@ -1,0 +1,40 @@
+.articles {
+  background-color: var(--very-light-gray);
+}
+
+.articles__content {
+}
+
+.articles__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.875rem;
+}
+
+@media (max-width: 39.9375em) {
+  h2 {
+    font-size: 1.875rem;
+  }
+}
+
+@media (max-width: 87.4375em) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
+/* Media Queries Up */
+@media (min-width: 40em) {
+  .articles__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 64em) {
+  .articles__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 87.5em) {
+}

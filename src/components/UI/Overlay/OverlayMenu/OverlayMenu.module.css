@@ -1,0 +1,21 @@
+.menu-container {
+  background: var(--white);
+  padding: 1.625rem 0;
+  border-radius: 7px;
+  margin-top: 1.5rem;
+}
+
+.menu-container li {
+  list-style: none;
+  padding: 0.625rem;
+}
+
+.menu-container li:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.menu-container li a {
+  display: block;
+  color: var(--dark-blue);
+  text-align: center;
+}

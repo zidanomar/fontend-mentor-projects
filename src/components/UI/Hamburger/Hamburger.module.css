@@ -1,0 +1,24 @@
+.hamburger > span {
+  display: block;
+  width: 26px;
+  height: 3px;
+  background-color: var(--dark-blue);
+  transition: all 0.3s ease-in-out;
+  transform-origin: 2px 2px;
+}
+
+.hamburger > span:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.hamburger.open > span:first-child {
+  transform: rotate(45deg);
+}
+
+.hamburger.open > span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open > span:last-child {
+  transform: rotate(-45deg);
+}
