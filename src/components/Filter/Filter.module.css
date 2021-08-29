@@ -1,0 +1,63 @@
+.filter {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: -3.75rem auto 0;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: var(--box-shadow);
+  max-width: 69rem;
+}
+
+.filter__queries {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+}
+
+.filter__tablet--wrapper {
+  padding: 0.3rem;
+}
+
+.filter__tablet {
+  display: flex;
+  color: var(--primary-color);
+  background-color: var(--filter-tablets);
+  font-size: 0.8rem;
+  font-weight: 700;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.filter__tablet span {
+  margin-right: 0.5rem;
+  padding: 0.3rem 0.5rem;
+}
+.filter__remove {
+  padding: 0.3rem;
+  border-radius: 0 5px 5px 0;
+  background-color: var(--primary-color);
+  transition: all 0.2s ease-in-out;
+}
+
+.filter__remove img {
+  margin-top: 5px;
+}
+
+.filter__remove:hover {
+  background-color: var(--darkest-color);
+  cursor: pointer;
+}
+
+.filter__celar {
+  color: var(--dark-color);
+  transition: all 0.2s ease-in-out;
+}
+
+.filter__celar:hover {
+  cursor: pointer;
+  color: var(--primary-color);
+  text-decoration: underline;
+}

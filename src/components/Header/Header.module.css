@@ -1,0 +1,12 @@
+.header {
+  width: 100%;
+  height: 155px;
+  background-image: url('./bg-header-mobile.svg');
+  background-color: var(--primary-color);
+}
+
+@media (min-width: 992px) {
+  .header {
+    background-image: url('./bg-header-desktop.svg');
+  }
+}
