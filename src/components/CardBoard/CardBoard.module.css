@@ -3,7 +3,7 @@
   margin: 0 auto;
   background-color: #fff;
   padding: 1.5rem;
-  border-radius: 0.3rem;
+  border-radius: 0.5rem;
   box-shadow: var(--box-shadow);
   display: flex;
   flex-wrap: wrap;
@@ -140,7 +140,21 @@
     height: 1px;
     background-color: var(--dark-color);
     align-self: center;
-    margin: 1rem 0;
+    margin: 1.5rem 0;
+  }
+
+  .card-board__title__subtitle span {
+    width: 4px;
+    height: 4px;
+    margin-right: 0.3rem;
+  }
+
+  .card-board__title__subtitle p {
+    font-size: 0.8rem;
+  }
+
+  .card-board__title__subtitle p:not(:last-child) {
+    margin-right: 0.5rem;
   }
 
   .card-board__tags {

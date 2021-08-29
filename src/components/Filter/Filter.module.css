@@ -6,7 +6,7 @@
   align-items: center;
   margin: -3.75rem auto 0;
   padding: 1rem 1.5rem;
-  border-radius: 12px;
+  border-radius: 8px;
   box-shadow: var(--box-shadow);
   max-width: 69rem;
 }
