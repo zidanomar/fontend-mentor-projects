@@ -2,9 +2,6 @@
   background-color: var(--very-light-gray);
 }
 
-.articles__content {
-}
-
 .articles__grid {
   display: grid;
   grid-template-columns: 1fr;
