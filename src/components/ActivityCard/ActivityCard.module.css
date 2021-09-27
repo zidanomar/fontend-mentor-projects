@@ -1,0 +1,135 @@
+.activity {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.activity__card {
+  position: relative;
+  border-radius: 1rem;
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+}
+
+.work {
+  background-color: var(--color-red-work);
+  background-image: url('../../images/icon-work.svg');
+}
+
+.play {
+  background-color: var(--color-blue-play);
+  background-image: url('../../images/icon-play.svg');
+}
+.study {
+  background-color: var(--color-red-study);
+  background-image: url('../../images/icon-study.svg');
+}
+.exercise {
+  background-color: var(--color-green-exercise);
+  background-image: url('../../images/icon-exercise.svg');
+}
+.social {
+  background-color: var(--color-violet-social);
+  background-image: url('../../images/icon-social.svg');
+}
+.self-care {
+  background-color: var(--color-orange-selfcare);
+  background-image: url('../../images/icon-self-care.svg');
+}
+
+.card__body {
+  position: absolute;
+  height: 80%;
+  width: 100%;
+  bottom: 0;
+  border-radius: 0.8em;
+  background-color: var(--color-dark-blue);
+  padding: 2rem;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+.card__body:hover {
+  background-color: var(--color-blue);
+  cursor: pointer;
+}
+
+.card__category {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.card__category > div {
+  pointer-events: auto;
+}
+
+.card__category div svg path {
+  transition: all 0.2s ease-in-out;
+}
+
+.card__category div:hover svg path {
+  fill: #fff;
+}
+
+.card__details {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card__details h2 {
+  margin-bottom: 0.5rem;
+  flex-grow: 100%;
+  flex-basis: 60%;
+}
+
+@media (max-width: 1110px) {
+  .activity {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    width: 43.75rem;
+    margin-bottom: 2rem;
+  }
+  .activity__card {
+    border-radius: 16px;
+    height: 220px;
+    display: flex;
+    background-repeat: no-repeat;
+  }
+
+  .activity__card {
+    position: relative;
+    border-radius: 1rem;
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+  }
+
+  .card__body {
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    bottom: 0;
+    border-radius: 1rem;
+    background-color: var(--color-dark-blue);
+    padding: 2rem;
+  }
+
+  .card__details {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .card__details h2 {
+    margin-bottom: 0;
+    flex-basis: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .activity {
+    width: 325px;
+  }
+}
