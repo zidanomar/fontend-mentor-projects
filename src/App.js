@@ -1,24 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import { ThemeProvider } from 'styled-components';
+import Header from './components/Header/Header';
+import Hero from './components/Hero/Hero';
+import GlobalStyles from './GlobalStyles';
+
+const theme = {
+  mobile: '375px',
+  color: {
+    primary: 'hsl(0, 100%, 68%)',
+    darkBlue: 'hsl(230, 29%, 20%)',
+    darkGrayishBlue: 'hsl(230, 11%, 40%)',
+    grayishBlue: 'hsl(231, 7%, 65%)',
+    lightBlue: 'hsl(207, 33%, 95%)'
+  },
+  font: {
+    face: `'Barlow Condensed', sans-serif`,
+    regular: '400',
+    bold: '700'
+  },
+  media: {
+    mobile: '768px',
+    desktop: '1440px'
+  }
+};
 
 function App() {
+  const [isActive, setIsActive] = useState(false);
+
+  const toggleNavbarOn = () => {
+    setIsActive(true);
+  };
+
+  const toggleNavbarOff = () => {
+    setIsActive(false);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <GlobalStyles />
+      <Header
+        isActive={isActive}
+        onToggleActive={toggleNavbarOn}
+        onToggleInactive={toggleNavbarOff}
+      />
+      <Hero />
+    </ThemeProvider>
   );
 }
 
