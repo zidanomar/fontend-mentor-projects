@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
@@ -37,15 +37,18 @@ function App() {
     setIsActive(false);
   };
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyles />
-      <Header
-        isActive={isActive}
-        onToggleActive={toggleNavbarOn}
-        onToggleInactive={toggleNavbarOff}
-      />
-      <Hero />
-    </ThemeProvider>
+    <React.Fragment>
+      <ThemeProvider theme={theme}>
+        <GlobalStyles />
+        <Header
+          isActive={isActive}
+          onToggleActive={toggleNavbarOn}
+          onToggleInactive={toggleNavbarOff}
+        />
+        <Hero />
+        <div className='blue-area'></div>
+      </ThemeProvider>
+    </React.Fragment>
   );
 }
 

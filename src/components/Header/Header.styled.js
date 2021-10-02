@@ -7,10 +7,12 @@ export const StyledHeader = styled.nav`
   align-items: center;
   height: 100px;
   z-index: 100;
-  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.25);
 `;
 
-export const Logo = styled.img``;
+export const Logo = styled.img`
+  position: relative;
+  z-index: 110;
+`;
 
 export const Links = styled.div`
   display: flex;
@@ -59,7 +61,7 @@ export const Links = styled.div`
 
     li:not(:last-child) {
       @media (min-width: 768px) {
-        margin-right: 1rem;
+        margin-right: 2rem;
       }
     }
   }
@@ -99,7 +101,7 @@ export const Divider = styled.div`
   height: 0.5rem;
   border-radius: 100%;
   background-color: hsl(231, 7%, 65%);
-  margin: 0 1rem;
+  margin: 0 2rem;
   @media (max-width: 768px) {
     width: 90%;
     height: 1px;
@@ -128,8 +130,7 @@ export const Hamburger = styled.div`
 
 export const Modal = styled.div`
   position: fixed;
-  displ
-  top: 80px;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100vh;

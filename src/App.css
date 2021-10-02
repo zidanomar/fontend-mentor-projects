@@ -1,8 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap');
 
+.blue-area {
+  position: absolute;
+  background-color: hsl(207, 33%, 95%);
+  width: 50vw;
+  height: 50vh;
+  top: 0;
+  right: 0;
+  border-bottom-left-radius: 8rem;
+  z-index: -1;
+}
+
 .attribution {
   position: absolute;
-  bottom: 1rem;
+  bottom: -10rem;
   left: 50%;
   transform: translateX(-50%);
 }

@@ -8,9 +8,19 @@ const GlobalStyles = createGlobalStyle`
    }
 
    body {
+      position: relative;
       font-size: 18px;
       font-family: 'Barlow Condensed', sans-serif;
       overflow-x: hidden;
+
+      &::after {
+         position: absolute;
+         background-color: red;
+         top: 0;
+         right: 0;
+         width: 50vw;
+         height: 50vh;
+      }
    }
 
    h1 {
