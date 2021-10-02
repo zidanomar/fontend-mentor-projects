@@ -4,6 +4,8 @@ import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import GlobalStyles from './GlobalStyles';
 
+import './App.css';
+
 const theme = {
   mobile: '375px',
   color: {

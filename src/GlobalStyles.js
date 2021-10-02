@@ -1,7 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
 
-import './app.css';
-
 const GlobalStyles = createGlobalStyle`  
    *, *:before, *:after {
       margin: 0;
